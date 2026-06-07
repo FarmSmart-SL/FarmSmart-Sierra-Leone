@@ -1,0 +1,32 @@
+body{
+    margin:0;
+    font-family: Tahoma,sans-serif;
+}
+.loading-body{
+background:#2E7D32
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+}
+.loader-container{
+    text-align: center;
+}
+.loader{
+    width: 70px;
+    height: 70px;
+    border: 8px solid white;
+    border-top: 8px solid gold;
+    border-radius: 50%;
+    margin: 20px auto;
+    animation: spin 1s linear infinite;  
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
